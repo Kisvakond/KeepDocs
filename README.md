@@ -37,7 +37,7 @@ Before this line, copy
 /* Set up to keep howto documents after using them. To set back default behaviour (lose documents), set it to false. */
 if(isNil "DZE_KeepHowTos") then {
 	DZE_KeepHowTos = true;
-}
+};
 
 That's all.
 

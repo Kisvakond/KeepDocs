@@ -39,3 +39,6 @@ if(isNil "DZE_KeepHowTos") then {
 	DZE_KeepHowTos = true;
 }
 
+That's all.
+
+Hope you like it! :D

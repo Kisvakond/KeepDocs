@@ -40,7 +40,7 @@ if (_IsNearVehicle >= 1) then {
 			_newclassname = _upgrade select 0;
 			_requirementsWeapon = _upgrade select 1;
 			_requirementsMagazine = _upgrade select 2;
-			
+			/*--------------------------------------------------------------------------------*/
 			/* ADDED by Kisvakond: Keep the howto document instead of consuming it, if needed */
 			if (true == DZE_KeepHowTos) then {
 				/* Search for input item matching the upgrade name */						
@@ -54,7 +54,7 @@ if (_IsNearVehicle >= 1) then {
 					};
 				};
 			};
-			
+			/*--------------------------------------------------------------------------------*/
 			_missingQty = 0;
 			_missing = "";
 

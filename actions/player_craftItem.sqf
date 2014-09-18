@@ -74,6 +74,7 @@ if (_canDo) then {
 	_outputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "outputweapons");
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 
+	/*--------------------------------------------------------------------------------*/
 	/* ADDED by Kisvakond: Keep the howto document instead of consuming it, if needed */
 	if (true == DZE_KeepHowTos) then {
 		/* Search for input item matching the crafting name */			
@@ -90,6 +91,7 @@ if (_canDo) then {
 			};
 		};	
 	};
+	/*--------------------------------------------------------------------------------*/
 	
 	_sfx = getText(configFile >> _baseClass >> _item >> "sfx");
 	if(_sfx == "") then {

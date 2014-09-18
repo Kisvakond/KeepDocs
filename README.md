@@ -1,5 +1,6 @@
 KeepDocs
 ========
+Version 0.1.
 
 DayZ Epoch mod to keep players' HowTo documents otherwise consumed for crafting/upgrades.
 

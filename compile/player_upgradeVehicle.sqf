@@ -9,8 +9,6 @@ DZE_ActionInProgress = true;
 
 // This is used to find correct upgrade based what upgrades was called allows multiple upgrades per vehicle.
 _upgrade = _this;
-/* keep the name of the upgrade */
-//_upgradeName = format ["%1", _upgrade];
 
 if (vehicle player != player) exitWith {DZE_ActionInProgress = false; cutText [(localize "STR_EPOCH_ACTIONS_18"), "PLAIN DOWN"]};
 

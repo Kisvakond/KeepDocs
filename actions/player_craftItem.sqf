@@ -76,7 +76,7 @@ if (_canDo) then {
 
 	/*--------------------------------------------------------------------------------*/
 	/* ADDED by Kisvakond: Keep the howto document instead of consuming it, if needed */
-	if (true == DZE_KeepHowTos) then {
+	if (DZE_KeepHowTos == true) then {
 		/* Search for input item matching the crafting name */			
 		for "_x" from 0 to ((count _selectedRecipeInput) - 1) do {
 			/* _itemIn pre-used for getting input item name*/

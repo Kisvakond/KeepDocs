@@ -42,7 +42,7 @@ if (_IsNearVehicle >= 1) then {
 			_requirementsMagazine = _upgrade select 2;
 			/*--------------------------------------------------------------------------------*/
 			/* ADDED by Kisvakond: Keep the howto document instead of consuming it, if needed */
-			if (true == DZE_KeepHowTos) then {
+			if (DZE_KeepHowTos == true) then {
 				/* Search for input item matching the upgrade name */						
 				for "_x" from 0 to ((count _requirementsMagazine) - 1) do {
 					/* _itemIn pre-used for getting input item name*/

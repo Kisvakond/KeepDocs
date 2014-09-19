@@ -7,10 +7,10 @@
 /*			_docToKeep 	  -> name of the howto to keep.								*/
 /* Returns: _newItemsList -> items excluding the									*/
 private [_origItemList, _docToKeep, _item];
+_origItemList = _this select 0;
 /* Function only active when demanded */
 if (DZE_KeepHowTos) then {
-	/* Fetch parameters */
-	_origItemList = _this select 0;
+	/* Fetch parameters */	
 	_docToKeep = _this select 1;
 	/* Search for input item matching the crafting name */			
 	for "_x" from 0 to ((count _origItemList) - 1) do {

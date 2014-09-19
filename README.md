@@ -1,13 +1,17 @@
-KeepDocs
-========
-Version 0.1.
+KeepDocs Mod v0.1
+=================
+Author: Kisvakond at epochmod.com/forum/
+Contact: dayzdisinfection@gmail.com
 
-DayZ Epoch mod to keep players' HowTo documents otherwise consumed for crafting/upgrades.
+A DayZ Epoch mod to keep players' HowTo documents otherwise consumed for crafting/upgrades.
+Use the DZE_KeepHowTos variable to control whether you like to lose your documents or not.
+DZE_KeepHowTos = true -> keep it
+DZE_KeepHowTos = false -> lose it (default Dayz Epoch feeling)
 
 Usage: Do your crafting or vehicle upgrade as usual. The document used will remain in your inventory.
 
 Installation
-NOTE: These instructions are for Epoch 1.0.5.1. For future version, please check the github for updates or contact me if something is out of date!
+NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future version, please check the github for updates or contact me if something is out of date!
 
 1. Download the ZIP from the Github repo: https://github.com/Kisvakond/KeepDocs
 

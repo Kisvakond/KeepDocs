@@ -13,11 +13,11 @@ Usage: Do your crafting or vehicle upgrade as usual. The document used will rema
 Installation
 NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future version, please check the github for updates or contact me if something is out of date!
 
-1. Download the ZIP from the [Github repo](https://github.com/Kisvakond/KeepDocs)
+__Step 1__ Download the ZIP from the [Github repo](https://github.com/Kisvakond/KeepDocs)
 
-2. Unzip the 'addons' folder into ```(your Steam folder)\SteamApps\common\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
+__Step 2__ Unzip the 'addons' folder into ```(your Steam folder)\SteamApps\common\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
 
-3. If you already have a custom ```compiles.sqf```, go to step 3c.
+__Step 3__ If you already have a custom ```compiles.sqf```, go to step 3c.
    If you don't have one, get it by extracting one from your dayz_code.pbo.
    a) Locate dayz_code.pbo at ```(your Steam folder)\SteamApps\common\Arma 2 Operation Arrowhead\(your Dayz folder e.g. @DayZ_Epoch1051)\addons\```
 
@@ -54,7 +54,7 @@ _requirementsMagazine = _upgrade select 2;
 _requirementsMagazine = [_requirementsMagazine, (format ["%1", _this])] call fnc_keepDoc;
 ```
 
-4. a) In your copy of ```compiles.sqf``` in your mission folder, replace the line:
+__Step 4__ a) In your copy of ```compiles.sqf``` in your mission folder, replace the line:
 
 ```sqf
 player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
@@ -84,7 +84,7 @@ player_upgradeVehicle =		compile preprocessFileLineNumbers "compile\player_upgra
 fnc_keepDoc = 					compile preprocessFileLineNumbers "addons\KeepDocs\fn_keepDoc.sqf"; /* Addon for custom craft and upgrade functions */
 ```
 
-5. a) In your ```init.sqf```, locate the end of the variables. Look for 
+__Step 5__ a) In your ```init.sqf```, locate the end of the variables. Look for 
 
 ```sqf
 //Load in compiled functions

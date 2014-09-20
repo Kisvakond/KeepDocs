@@ -30,60 +30,60 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```
 
    d) In your mission folder, open ```addons\KeepDocs\player_craftItem.sqf``` and search for the line:
-   
+
 ```sqf
 _inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 ```
 
  After this line, insert:
-	  
+
 ```sqf
 /* Keep the HowTo document on demand */
 _selectedRecipeInput = [_selectedRecipeInput, (format ["%1", _item])] call fnc_keepDoc;
 ```
 
    e) In your mission folder, open ```addons\KeepDocs\player_upgradeVehicle.sqf``` and look for this line:
-```sqf   
+```sqf
 _requirementsMagazine = _upgrade select 2;
-```	
+```
 
  After this line, insert:
-	  
-```sqf	  
+
+```sqf
 /* Keep the HowTo document on demand */
 _requirementsMagazine = [_requirementsMagazine, (format ["%1", _this])] call fnc_keepDoc;
-```	
-   
+```
+
 4. a) In your copy of ```compiles.sqf``` in your mission folder, replace the line:
 
 ```sqf
 player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
-```	
-	
- to 	
-	
+```
+
+ to 
+
 ```sqf	
 player_craftItem =			compile preprocessFileLineNumbers "actions\player_craftItem.sqf";
 ```		
 
    b) Then, replace this:
-   
-```sqf   
+
+```sqf
 player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
-```   
-   
- to
+```
+
+to
 
 ```sqf   
 player_upgradeVehicle =		compile preprocessFileLineNumbers "compile\player_upgradeVehicle.sqf";
 ```
 
    c) before the line you have changed in step 4a, put this line:
-   
+
 ```sqf   
 fnc_keepDoc = 					compile preprocessFileLineNumbers "addons\KeepDocs\fn_keepDoc.sqf"; /* Addon for custom craft and upgrade functions */
 ```
-		
+
 5. a) In your ```init.sqf```, locate the end of the variables. Look for 
 
 ```sqf
@@ -91,22 +91,22 @@ fnc_keepDoc = 					compile preprocessFileLineNumbers "addons\KeepDocs\fn_keepDoc
 ```	
 
  Before this line, copy
-	  
+
 ```sqf
 /* Set up to keep howto documents after using them. To set back default behaviour (lose documents), set it to false. */
 if(isNil "DZE_KeepHowTos") then {
 	DZE_KeepHowTos = true;
 };
 ```
-	
+
    b) In the mission's ```init.sqf``` (located in the root of your your MPMisson\yourmisson), locate this line:
-   
+
 ```sqf   
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf"   
 ```	
 
 and replace to
-	  
+
 ```sqf	  
 call compile preprocessFileLineNumbers "compiles.sqf"; /* Compile Custom Functions */
 ```

@@ -38,23 +38,27 @@ _inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> 
  After this line, insert:
 	  
 ```sqf
-	/* Keep the HowTo document on demand */
-	_selectedRecipeInput = [_selectedRecipeInput, (format ["%1", _item])] call fn_keepDoc;```
+/* Keep the HowTo document on demand */
+_selectedRecipeInput = [_selectedRecipeInput, (format ["%1", _item])] call fn_keepDoc;
+```
 
    e) In your mission folder, open ```addons\KeepDocs\player_upgradeVehicle.sqf``` and look for this line:
 ```sqf   
-	_requirementsMagazine = _upgrade select 2;```	
+_requirementsMagazine = _upgrade select 2;
+```	
 
  After this line, insert:
 	  
 ```sqf	  
-	/* Keep the HowTo document on demand */
-	_requirementsMagazine = [_requirementsMagazine, (format ["%1", _this])] call fn_keepDoc;```	
+/* Keep the HowTo document on demand */
+_requirementsMagazine = [_requirementsMagazine, (format ["%1", _this])] call fn_keepDoc;
+```	
    
 4. a) In your copy of ```compiles.sqf``` in your mission folder, replace the line:
 
 ```sqf
-	player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";```	
+player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
+```	
 	
  to 	
 	

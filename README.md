@@ -33,7 +33,9 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");	
 ```
+
       After this line, insert:
+	  
 ```sqf
 	/* Keep the HowTo document on demand */
 	_selectedRecipeInput = [_selectedRecipeInput, (format ["%1", _item])] call fn_keepDoc;
@@ -43,6 +45,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf   
 	_requirementsMagazine = _upgrade select 2;
 ```	
+
       After this line, insert:
 	  
 ```sqf	  
@@ -85,6 +88,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf
 	//Load in compiled functions
 ```	
+
       Before this line, copy
 	  
 ```sqf
@@ -95,6 +99,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```
 	
    b) In the mission's init.sqf (located in the root of your your MPMisson\yourmisson), locate this line:
+   
 ```sqf   
    	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf"   
 ```	

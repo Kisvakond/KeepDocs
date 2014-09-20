@@ -24,12 +24,13 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
    b) Use you favourite PBO tool to open and extract ```dayz_code\init\compiles.sqf```. Copy it to your mission folder, mentioned in Step 2.
 
    c) With you PBO tool, copy the following files into the ```addons\KeepDocs folder``` in your mission folder:
-   ```
-	* dayz_code\actions\player_craftItem.sqf
-	* dayz_code\compile\player_upgradeVehicle.sqf.
-   ```
+```
+* dayz_code\actions\player_craftItem.sqf
+* dayz_code\compile\player_upgradeVehicle.sqf.
+```
 
    d) In your mission folder, open ```addons\KeepDocs\player_craftItem.sqf``` and search for the line:
+   
 ```sqf
 _inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 ```

@@ -33,7 +33,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");```
 
-      After this line, insert:
+ After this line, insert:
 	  
 ```sqf
 	/* Keep the HowTo document on demand */
@@ -43,7 +43,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf   
 	_requirementsMagazine = _upgrade select 2;```	
 
-      After this line, insert:
+ After this line, insert:
 	  
 ```sqf	  
 	/* Keep the HowTo document on demand */
@@ -54,7 +54,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf
 	player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";```	
 	
-	to 	
+ to 	
 	
 ```sqf	
 	player_craftItem =			compile preprocessFileLineNumbers "actions\player_craftItem.sqf";```		
@@ -64,7 +64,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf   
    player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";```   
    
-   to
+ to
 
 ```sqf   
    player_upgradeVehicle =		compile preprocessFileLineNumbers "compile\player_upgradeVehicle.sqf";```
@@ -79,7 +79,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf
 	//Load in compiled functions```	
 
-      Before this line, copy
+ Before this line, copy
 	  
 ```sqf
 	/* Set up to keep howto documents after using them. To set back default behaviour (lose documents), set it to false. */
@@ -92,7 +92,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 ```sqf   
    	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf"   ```	
 
-      and replace to
+ and replace to
 	  
 ```sqf	  
 	call compile preprocessFileLineNumbers "compiles.sqf"; /* Compile Custom Functions */```

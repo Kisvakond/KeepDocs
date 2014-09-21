@@ -99,7 +99,7 @@ if(isNil "DZE_KeepHowTos") then {
 };
 ```
 
-   b) In the mission's ```init.sqf``` (located in the root of your your MPMisson\yourmisson), locate this line:
+   b) Skip this if you already have a working custom compiles.sqf based on the original one. In the mission's ```init.sqf``` (located in the root of your your MPMisson\yourmisson), locate this line:
 
 ```sqf   
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf"   

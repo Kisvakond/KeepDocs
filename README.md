@@ -15,7 +15,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 
 __Step 1__ Download the ZIP from the [Github repo](https://github.com/Kisvakond/KeepDocs)
 
-__Step 2__ Unzip the 'addons' folder into ```(your Steam folder)\SteamApps\common\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
+__Step 2__ Unzip the 'addons' folder into ```(your Dayz Epoch Server folder)\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
 
 __Step 3__ If you already have a custom ```compiles.sqf```, go to step 3c.
    If you don't have one, get it by extracting one from your dayz_code.pbo.
@@ -63,7 +63,7 @@ player_craftItem =			compile preprocessFileLineNumbers "\z\addons\dayz_code\acti
  to 
 
 ```sqf	
-player_craftItem =			compile preprocessFileLineNumbers "actions\player_craftItem.sqf";
+player_craftItem =			compile preprocessFileLineNumbers "addons\KeepDocs\player_craftItem.sqf";
 ```		
 
    b) Then, replace this:
@@ -75,7 +75,7 @@ player_upgradeVehicle =		compile preprocessFileLineNumbers "\z\addons\dayz_code\
 to
 
 ```sqf   
-player_upgradeVehicle =		compile preprocessFileLineNumbers "compile\player_upgradeVehicle.sqf";
+player_upgradeVehicle =		compile preprocessFileLineNumbers "addons\KeepDocs\player_upgradeVehicle.sqf";
 ```
 
    c) before the line you have changed in step 4a, put this line:

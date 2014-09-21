@@ -15,7 +15,7 @@ NOTE: Use at you own risk! These instructions are for Epoch 1.0.5.1. For future 
 
 __Step 1__ Download the ZIP from the [Github repo](https://github.com/Kisvakond/KeepDocs)
 
-__Step 2__ Unzip the 'addons' folder into ```(your Dayz Epoch Server folder)\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
+__Step 2__ Form the ZIP, extract the 'addons' folder into ```(your Dayz Epoch Server folder)\Arma 2 Operation Arrowhead\MPMissions\(yourmisson) folder. Or just create the addons\KeepDocs``` folder and copy the fn_keepDoc.sqf file.
 
 __Step 3__ If you already have a custom ```compiles.sqf```, go to step 3c.
    If you don't have one, get it by extracting one from your dayz_code.pbo.

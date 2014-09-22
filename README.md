@@ -1,4 +1,4 @@
-KeepDocs Mod v0.1
+KeepDocs Mod v0.2
 =================
 Author: Kisvakond at epochmod.com/forum/
 Contact: dayzdisinfection@gmail.com

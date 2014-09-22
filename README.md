@@ -39,7 +39,7 @@ _inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> 
 
 ```sqf
 /* Keep the HowTo document on demand */
-_selectedRecipeInput = [_selectedRecipeInput, (format ["%1", _item])] call fnc_keepDoc;
+_selectedRecipeInput = [_selectedRecipeInput ] call fnc_keepDoc;
 ```
 
    e) In your mission folder, open ```addons\KeepDocs\player_upgradeVehicle.sqf``` and look for this line:
@@ -51,7 +51,7 @@ _requirementsMagazine = _upgrade select 2;
 
 ```sqf
 /* Keep the HowTo document on demand */
-_requirementsMagazine = [_requirementsMagazine, (format ["%1", _this])] call fnc_keepDoc;
+_requirementsMagazine = [ _requirementsMagazine ] call fnc_keepDoc;
 ```
 
 __Step 4__ a) In your copy of ```compiles.sqf``` in your mission folder, replace the line:
